@@ -1,6 +1,6 @@
 
 # Use an official Node.js image with the latest patches (minimal image)
-FROM node:24.5.0-bookworm-slim
+FROM node:24.5.0-alpine3.22
 
 # Update package manager and upgrade installed packages to get patched versions
 RUN apt-get update && apt-get upgrade -y && apt-get clean && rm -rf /var/lib/apt/lists/*
